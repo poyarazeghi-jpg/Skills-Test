@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-type="software" data-radius="soft" data-buttons="tonal" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>صفحه‌ی ساده‌ی یک‌دکمه‌ای</title>
+<meta name="description" content="صفحه‌ای ایستا که «سلام دنیا» را نشان می‌دهد.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f7f7f5">
+<meta name="site-kind" content="software">
+<meta name="page-type" content="software">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wdth,wght@85..100,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<style>
+:root {
+  --p-bg: #f7f7f5; --p-surface: #ebebe8; --p-ink: #000000; --p-muted: #666662;
+  --p-accent: #d0106f; --p-accent-ink: #ffffff; --p-action: #d0106f; --p-action-ink: #ffffff;
+  --p-inv-bg: #000000; --p-inv-surface: #010101; --p-inv-ink: #f7f7f5; --p-inv-muted: #828280;
+  --p-inv-accent: #d0106f; --p-inv-accent-ink: #ffffff; --p-inv-action: #d0106f; --p-inv-action-ink: #ffffff;
+  --font-display: "IBM Plex Sans", system-ui, sans-serif;
+  --font-text: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --display-weight: 500;
+  --display-tracking: -0.025em;
+  --display-tracking-xl: -0.035em;
+  --ly-scale: 0.98;
+}
+</style>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script src="assets/backgrounds/backgrounds.js"></script>
+</head>
+<body>
+<!-- plan: type software | hero centred (collage dealt first; dealt again: the brief puts the button in the middle of the page)
+     nav nav-centre (nav-cards dealt; no photographs), close close-word, footer footer-columns, rhythm surface-pairs,
+     buttons tonal, mark ring | palette card-pastels, type plex, radius soft (dealt first) | moments: cursor-spotlight (hero frame) -->
+<header class="nav nav--centre">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">رفتن به محتوا</a>
+    <a class="nav__logo" href="#top"><span class="mark" data-mark="ring" aria-hidden="true"></span><span data-app="name"></span></a>
+  </div>
+</header>
+<main id="top">
+  <section class="hero hero--centred" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text">
+      <div class="hero__c">
+        <h1 id="hero-h"><span class="ly-mark" aria-hidden="true"></span> سلام دنیا</h1>
+      </div>
+    </div></div>
+  </section>
+</main>
+<script src="config/app.js"></script>
+<script src="scripts/main.js"></script>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+# وضعیت محلی taste-skill (gate و تاریخچه‌ی deal)؛ فقط معافیت‌ها نگه داشته می‌شود
+.taste-skill/*
+!.taste-skill/waivers.json
