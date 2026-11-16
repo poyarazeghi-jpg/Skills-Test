@@ -25,13 +25,16 @@ projects/test-1-html/
 ├── config/
 │   └── app.js          ← هویت برنامه (تنها منبع نام، سازنده، برند و کمپانی)
 ├── scripts/
-│   └── main.js         ← هویت را از APP_CONFIG در صفحه می‌گذارد
+│   └── main.js         ← هویت و سال جاری را در صفحه می‌گذارد و پیام دکمه را بعد از کلیک نشان می‌دهد
+├── styles/
+│   └── page.css        ← استایل صفحه: فقط پنجره‌ی «درباره من» (با توکن‌های کیت)
 ├── assets/             ← کیت taste-skill: فقط فایل‌هایی که صفحه بارگذاری می‌کند؛ دست‌نخورده
 │   ├── system.css, system.js
 │   ├── ui/cards.css
 │   ├── motion/motion.css, motion.js
 │   ├── backgrounds/backgrounds.css, backgrounds.js
-│   └── layout/layout.css, layout.js
+│   ├── layout/layout.css, layout.js
+│   └── moments/moments.js, lib.js و cursor-spotlight/moment.js, moment.css
 ├── .gitignore          ← وضعیت محلی gate بیرون از گیت (جز waivers.json)
 └── docs/
     ├── 00-CONTEXT.md     ← خلاصه‌ی حداکثر ۴۰ خطی پروژه
@@ -65,6 +68,7 @@ projects/test-1-html/
 1. بازدیدکننده روی دکمه‌ی `[data-click]` کلیک می‌کند.
 2. `scripts/main.js` متن `data-message` همان دکمه را می‌خواند.
 3. همان متن در `[data-status]` (ناحیه‌ی `role="status"`) نوشته می‌شود و برای صفحه‌خوان اعلام می‌شود.
+4. هنگام بارگذاری، `scripts/main.js` مقدار `[data-app]` را از `config/app.js` و `[data-year]` را از سال جاری در سربرگ و باکس «درباره من» می‌گذارد.
 
 ---
 

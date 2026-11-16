@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  /* هر [data-app="key"] مقدار APP_CONFIG[key] را نشان می‌دهد و عنوان تب با اسم برنامه شروع می‌شود */
+  /* هر [data-app="key"] مقدار APP_CONFIG[key] را نشان می‌دهد؛ عنوان تب با اسم برنامه شروع می‌شود و [data-year] سال جاری را می‌گیرد */
   function fillIdentity() {
     var cfg = window.APP_CONFIG;
     if (!cfg) return;
@@ -11,6 +11,7 @@
       if (value) el.textContent = value;
     });
     document.title = cfg.name + ': ' + document.title;
+    document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
   }
 
   /* با کلیک روی [data-click]، متن data-message همان دکمه در [data-status] نوشته می‌شود */

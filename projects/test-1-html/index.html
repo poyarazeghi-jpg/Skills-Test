@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fa" dir="rtl" data-type="software" data-radius="soft" data-buttons="tonal" data-motion>
+<html lang="fa" dir="rtl" data-type="software" data-radius="soft" data-ground="sky" data-buttons="tonal" data-motion>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -32,8 +32,13 @@
   --ly-scale: 0.98;
 }
 </style>
+<link rel="stylesheet" href="styles/page.css">
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script src="assets/backgrounds/backgrounds.js"></script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/cursor-spotlight/moment.js">
 </head>
 <body>
 <!-- plan: type software | hero centred (collage dealt first; dealt again: the brief puts the button in the middle of the page)
@@ -53,6 +58,17 @@
         <div class="btn-row"><button class="btn btn--primary" type="button" data-click data-message="سلام! دکمه کلیک شد.">کلیک کن</button></div>
         <p class="hero__status t-lead" role="status" aria-live="polite" data-status></p>
       </div>
+      <aside class="hero__window" data-moment="cursor-spotlight" data-moment-opts='{"rest":[0.74,0.26],"radius":460}' aria-label="درباره من">
+        <div class="ly-piece about-win">
+          <div class="about-win__bar"><span class="about-win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span data-app="name"></span><span class="sp"></span><span class="about-win__tag">درباره من</span></div>
+          <dl class="about-win__rows">
+            <div><dt>سازنده</dt><dd data-app="creator"></dd></div>
+            <div><dt>برند</dt><dd data-app="brand"></dd></div>
+            <div><dt>کمپانی</dt><dd data-app="company"></dd></div>
+          </dl>
+          <p class="about-win__copy">© <span data-year></span> <span data-app="brand"></span> — ساخته‌شده توسط <span data-app="creator"></span></p>
+        </div>
+      </aside>
     </div></div>
   </section>
 </main>
