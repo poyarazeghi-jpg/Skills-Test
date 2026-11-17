@@ -22,6 +22,7 @@
 projects/test-1-html/
 ├── index.html          ← صفحه‌ی اصلی (هیرو centred؛ متن صفحه فقط اینجا)
 ├── favicon.svg         ← نشان حلقه‌ای برنامه
+├── share.jpg           ← تصویر کارت اشتراک (کاشی هیرو از shoot.mjs)
 ├── config/
 │   └── app.js          ← هویت برنامه (تنها منبع نام، سازنده، برند و کمپانی)
 ├── scripts/
@@ -30,11 +31,13 @@ projects/test-1-html/
 │   └── page.css        ← استایل صفحه: فقط پنجره‌ی «درباره من» (با توکن‌های کیت)
 ├── assets/             ← کیت taste-skill: فقط فایل‌هایی که صفحه بارگذاری می‌کند؛ دست‌نخورده
 │   ├── system.css, system.js
-│   ├── ui/cards.css
+│   ├── ui/cards.css, ui.js
 │   ├── motion/motion.css, motion.js
 │   ├── backgrounds/backgrounds.css, backgrounds.js
 │   ├── layout/layout.css, layout.js
 │   └── moments/moments.js, lib.js و cursor-spotlight/moment.js, moment.css
+├── .taste-skill/
+│   └── waivers.json    ← معافیت‌های gate با دلیل (بقیه‌ی وضعیت gate در گیت نیست)
 ├── .gitignore          ← وضعیت محلی gate بیرون از گیت (جز waivers.json)
 └── docs/
     ├── 00-CONTEXT.md     ← خلاصه‌ی حداکثر ۴۰ خطی پروژه

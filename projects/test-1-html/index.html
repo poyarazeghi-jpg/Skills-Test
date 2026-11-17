@@ -3,8 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>صفحه‌ی ساده‌ی یک‌دکمه‌ای</title>
-<meta name="description" content="صفحه‌ای ایستا که «سلام دنیا» را نشان می‌دهد.">
+<title>وب‌اپ یک‌دکمه‌ای برای نمایش پیام</title>
+<meta name="description" content="صفحه‌ای ایستا با یک دکمه که با کلیک، پیامی ساده نشان می‌دهد.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="وب‌اپ یک‌دکمه‌ای با پیام ساده">
+<meta property="og:description" content="روی دکمه کلیک کن و پیامی ساده را زیر آن ببین.">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#dbeafe">
 <meta name="site-kind" content="software">
@@ -19,7 +24,7 @@
 <link rel="stylesheet" href="assets/layout/layout.css">
 <style>
 :root {
-  --p-bg: #dbeafe; --p-surface: #d0def2; --p-ink: #161a22; --p-muted: #535b67;
+  --p-bg: #dbeafe; --p-surface: #d0def2; --p-ink: #161a22; --p-muted: #3c4452;
   --p-accent: #d0106f; --p-accent-ink: #ffffff; --p-action: #d0106f; --p-action-ink: #ffffff;
   --p-inv-bg: #161a22; --p-inv-surface: #21262f; --p-inv-ink: #dbeafe; --p-inv-muted: #8993a3;
   --p-inv-accent: #d0106f; --p-inv-accent-ink: #ffffff; --p-inv-action: #d0106f; --p-inv-action-ink: #ffffff;
@@ -42,25 +47,27 @@
 </head>
 <body>
 <!-- plan: type software | hero centred (collage dealt first; dealt again: the brief puts the button in the middle of the page)
-     nav nav-centre (nav-cards dealt; no photographs), close close-word, footer footer-columns, rhythm surface-pairs,
+     nav nav-centre (nav-cards dealt; no photographs), close close-word, footer footer-columns (one plain column: the brief has no link columns), rhythm surface-pairs,
      buttons tonal, mark ring | palette card-pastels, type plex, radius soft (dealt first) | moments: cursor-spotlight (hero frame) -->
 <header class="nav nav--centre">
   <div class="wrap nav__bar">
     <a class="skip-link" href="#top">رفتن به محتوا</a>
     <a class="nav__logo" href="#top"><span class="mark" data-mark="ring" aria-hidden="true"></span><span data-app="name"></span></a>
+    <div class="nav__actions"><a class="btn btn--primary" href="#top">کلیک کن</a></div>
   </div>
 </header>
 <main id="top">
   <section class="hero hero--centred" data-enter aria-labelledby="hero-h">
     <div class="wrap"><div class="hero-text">
       <div class="hero__c">
-        <h1 id="hero-h"><span class="ly-mark" aria-hidden="true"></span> سلام دنیا</h1>
+        <h1 id="hero-h">سلام دنیا</h1>
+        <p class="hero__lead t-lead"><span data-app="name"></span> یک صفحه‌ی کوچک با یک دکمه است. روی دکمه کلیک کن تا پیامی ساده همین‌جا، زیر دکمه، نشان داده شود.</p>
         <div class="btn-row"><button class="btn btn--primary" type="button" data-click data-message="سلام! دکمه کلیک شد.">کلیک کن</button></div>
         <p class="hero__status t-lead" role="status" aria-live="polite" data-status></p>
       </div>
       <aside class="hero__window" data-moment="cursor-spotlight" data-moment-opts='{"rest":[0.74,0.26],"radius":460}' aria-label="درباره من">
         <div class="ly-piece about-win">
-          <div class="about-win__bar"><span class="about-win__dots" aria-hidden="true"><i></i><i></i><i></i></span><span data-app="name"></span><span class="sp"></span><span class="about-win__tag">درباره من</span></div>
+          <div class="about-win__bar"><span class="about-win__dots" aria-hidden="true"><i></i><i></i><i></i></span><svg class="about-win__logo" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 5.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9z"/></svg><span data-app="name"></span><span class="sp"></span><span class="about-win__tag">درباره من</span></div>
           <dl class="about-win__rows">
             <div><dt>سازنده</dt><dd data-app="creator"></dd></div>
             <div><dt>برند</dt><dd data-app="brand"></dd></div>
@@ -72,6 +79,27 @@
     </div></div>
   </section>
 </main>
+<footer class="footer closing" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--word">
+      <div class="section-head--split">
+        <div><h2 id="close-h">یک دکمه و یک پیام</h2><p class="t-lead">دکمه‌ی بالای صفحه پیامی ساده نشان می‌دهد.</p></div>
+        <a class="btn btn--primary" href="#top">کلیک کن</a>
+      </div>
+      <p class="close__word" aria-hidden="true" data-app="name"></p>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-12 stack-4">
+          <a class="nav__logo" href="#top"><span class="mark" data-mark="ring" aria-hidden="true"></span><span data-app="name"></span></a>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span>© <span data-year></span> <span data-app="brand"></span></span>
+      </div>
+    </div>
+  </div>
+</footer>
 <script src="config/app.js"></script>
 <script src="scripts/main.js"></script>
 <script type="module" src="assets/system.js"></script>

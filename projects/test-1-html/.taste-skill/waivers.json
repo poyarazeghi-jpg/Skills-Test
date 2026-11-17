@@ -1,0 +1,6 @@
+[
+  { "check": "edge-left", "target": "nav logo", "reason": "RTL page (fa): the logo sits on the right line; the check expects it on the left line" },
+  { "check": "edge-right", "target": "nav actions", "reason": "RTL page (fa): the nav action sits on the left line; the check expects it on the right line" },
+  { "check": "container-edges", "target": "div.footer__legal > span", "reason": "RTL page (fa): text starts on the right edge; the check measures the left edge" },
+  { "check": "container-edges", "target": "h2#close-h", "reason": "RTL page (fa): the heading starts on the right edge; the check measures the left edge" }
+]

@@ -11,6 +11,8 @@
       if (value) el.textContent = value;
     });
     document.title = cfg.name + ': ' + document.title;
+    var og = document.querySelector('meta[property="og:title"]');
+    if (og) og.setAttribute('content', cfg.name + ': ' + og.getAttribute('content'));
     document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
   }
 

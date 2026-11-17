@@ -11,3 +11,9 @@
 .about-win__rows dt { color: var(--muted); }
 .about-win__rows dd { margin: 0; font-weight: 500; }
 .about-win__copy { margin: 0; padding: var(--s-3) var(--s-4); border-top: 1px solid color-mix(in oklab, var(--ink) 10%, transparent); color: var(--muted); font-size: var(--t-small); }
+.about-win__logo { width: 18px; height: 18px; flex: none; color: var(--accent); }
+/* راست‌به‌چپ: کیت حاشیه‌ی فیزیکی چپ می‌گذارد؛ لوگو و دکمه‌ی سربرگ به دو لبه‌ی .wrap می‌روند */
+.nav__bar { justify-content: space-between; }
+.nav:not(.is-open) .nav__actions { margin-left: 0; margin-inline-start: auto; }
+/* حرف‌های فارسی از خط لاتین بلندترند؛ برای اسم بزرگ فوتر جای بالایشان باز می‌ماند */
+.close__word { line-height: 1.3; }
